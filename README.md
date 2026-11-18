@@ -50,6 +50,11 @@ yarn add @md2ui/dom@alpha
 bun add @md2ui/dom@alpha
 ```
 
+Install from npm, not from git: `@md2ui/dom` and `@md2ui/wire` are built by bundling the
+repository's internal workspace packages, so the repository itself is not an installable
+package. To try an unreleased change, clone it, run `pnpm install` and `pnpm build`, then
+`pnpm pack` in `packages/dom` (or `wire`, `react`, `vue`) and install the tarball.
+
 | You want | Install |
 |---|---|
 | The element, in any framework or none | `@md2ui/dom` |
