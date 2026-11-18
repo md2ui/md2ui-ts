@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://md2ui.org/sitemap.xml
