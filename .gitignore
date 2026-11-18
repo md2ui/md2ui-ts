@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.fixtures/
+coverage/
+*.tsbuildinfo
+.vitest/
+.DS_Store
+
+# Working notes: the domain board, briefs and batch reports. Private; a maintainer's
+# checkout mounts them here.
+/plans
+# Screen recordings saved into the checkout.
+/ScreenRecording_*

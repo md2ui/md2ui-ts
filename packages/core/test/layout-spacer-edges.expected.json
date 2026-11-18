@@ -1,0 +1,660 @@
+{
+  "_source": "md2ui d2874045, 2026-10-09: tests/spacer_tests.py's documents (bf455927), grouped by session.group_markdown (to_dict) and laid out by its _layout helper at 600 under Theme(); fingerprint hashes nulled (the analyzer re-derives them)",
+  "card_line": {
+    "markdown": "#### \n\n+++++\n\nAlpha - Bravo\n\n+++++\n",
+    "boxed": [false, false],
+    "layout": {
+      "type": "layout",
+      "children": [
+        {
+          "type": "col",
+          "section_level": 4,
+          "children": [
+            {
+              "type": "-",
+              "spacer": "col"
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "-",
+                  "content_id": "0.0"
+                },
+                {
+                  "type": "-",
+                  "content_id": "0.1"
+                }
+              ]
+            },
+            {
+              "type": "-",
+              "spacer": "col"
+            }
+          ]
+        }
+      ]
+    },
+    "grouping": {
+      "node_id": "",
+      "content": "",
+      "type": "root",
+      "fingerprint_hash": null,
+      "children": [
+        {
+          "node_id": "0",
+          "content": "",
+          "type": "group",
+          "fingerprint_hash": null,
+          "children": [
+            {
+              "node_id": "0.0",
+              "content": "Alpha",
+              "type": "segment",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 0,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            },
+            {
+              "node_id": "0.1",
+              "content": "Bravo",
+              "type": "segment",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 0,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            }
+          ],
+          "line_split_group": true,
+          "separator_chars": ["-"],
+          "spacer_above": "+++++",
+          "spacer_below": "+++++",
+          "source_line_id": 0,
+          "heading_group": true,
+          "heading_level": 4,
+          "text_style_chain": ["root", "heading:4"],
+          "avg_word_count": 2.0,
+          "text_length_category": "one_word",
+          "content_length_category": "one_word",
+          "child_types": ["segment", "segment"],
+          "child_type_counts": {
+            "segment": 2
+          }
+        }
+      ],
+      "source_line_id": 0,
+      "top_heading_level": 4,
+      "text_style_chain": ["root"],
+      "avg_word_count": 2.0,
+      "text_length_category": "one_word",
+      "content_length_category": "one_word",
+      "child_types": ["group"],
+      "child_type_counts": {
+        "group": 1
+      }
+    }
+  },
+  "card_column_row": {
+    "markdown": "#### \n\n+++++\n\n;;;\n\nAlpha\n\n:::\n\nBravo\n\n;;;\n\n+++++\n",
+    "boxed": [false, false],
+    "layout": {
+      "type": "layout",
+      "children": [
+        {
+          "type": "col",
+          "section_level": 4,
+          "children": [
+            {
+              "type": "-",
+              "spacer": "col"
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "-",
+                  "content_id": "0.0"
+                },
+                {
+                  "type": "-",
+                  "content_id": "0.1"
+                }
+              ]
+            },
+            {
+              "type": "-",
+              "spacer": "col"
+            }
+          ]
+        }
+      ]
+    },
+    "grouping": {
+      "node_id": "",
+      "content": "",
+      "type": "root",
+      "fingerprint_hash": null,
+      "children": [
+        {
+          "node_id": "0",
+          "content": "",
+          "type": "group",
+          "fingerprint_hash": null,
+          "children": [
+            {
+              "node_id": "0.0",
+              "content": "Alpha",
+              "type": "segment",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 0,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            },
+            {
+              "node_id": "0.1",
+              "content": "Bravo",
+              "type": "segment",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 1,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            }
+          ],
+          "column_row_group": true,
+          "column_weights": [null, null],
+          "spacer_above": "+++++",
+          "spacer_below": "+++++",
+          "heading_group": true,
+          "heading_level": 4,
+          "text_style_chain": ["root", "heading:4"],
+          "avg_word_count": 2.0,
+          "text_length_category": "one_word",
+          "content_length_category": "one_word",
+          "child_types": ["segment", "segment"],
+          "child_type_counts": {
+            "segment": 2
+          }
+        }
+      ],
+      "top_heading_level": 4,
+      "text_style_chain": ["root"],
+      "avg_word_count": 2.0,
+      "text_length_category": "one_word",
+      "content_length_category": "one_word",
+      "child_types": ["group"],
+      "child_type_counts": {
+        "group": 1
+      }
+    }
+  },
+  "beside_items": {
+    "markdown": "#### T\n\n;;;\n\n+++++ +++++\n\n:::\n\n- Item\n\n;;;\n\n- Item\n\n:::\n\n+++++ +++++\n\n;;;\n",
+    "boxed": [false, false],
+    "layout": {
+      "type": "layout",
+      "children": [
+        {
+          "type": "col",
+          "section_level": 4,
+          "children": [
+            {
+              "type": "-",
+              "content_id": "0.0"
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "-",
+                  "spacer": "row"
+                },
+                {
+                  "type": "-",
+                  "content_id": "0.1",
+                  "background_kind": "unordered_list"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "-",
+                  "content_id": "0.2",
+                  "background_kind": "unordered_list"
+                },
+                {
+                  "type": "-",
+                  "spacer": "row"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "grouping": {
+      "node_id": "",
+      "content": "",
+      "type": "root",
+      "fingerprint_hash": null,
+      "children": [
+        {
+          "node_id": "0",
+          "content": "",
+          "type": "group",
+          "fingerprint_hash": null,
+          "children": [
+            {
+              "node_id": "0.0",
+              "content": "T",
+              "type": "heading4",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 0,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            },
+            {
+              "node_id": "0.1",
+              "content": "Item",
+              "type": "list_item",
+              "fingerprint_hash": null,
+              "children": [],
+              "spacer_lead": "+++++ +++++",
+              "spacer_beside": true,
+              "source_line_id": 1,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4", "unordered_lists"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            },
+            {
+              "node_id": "0.2",
+              "content": "Item",
+              "type": "list_item",
+              "fingerprint_hash": null,
+              "children": [],
+              "spacer_trail": "+++++ +++++",
+              "spacer_beside": true,
+              "source_line_id": 2,
+              "rotation_index": 1,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4", "unordered_lists"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            }
+          ],
+          "heading_group": true,
+          "heading_level": 4,
+          "text_style_chain": ["root", "heading:4"],
+          "avg_word_count": 3.0,
+          "text_length_category": "one_word",
+          "content_length_category": "one_word",
+          "child_types": ["heading4", "list_item", "list_item"],
+          "child_type_counts": {
+            "heading4": 1,
+            "list_item": 2
+          }
+        }
+      ],
+      "top_heading_level": 4,
+      "text_style_chain": ["root"],
+      "avg_word_count": 3.0,
+      "text_length_category": "one_word",
+      "content_length_category": "one_word",
+      "child_types": ["group"],
+      "child_type_counts": {
+        "group": 1
+      }
+    }
+  },
+  "beside_item_lines": {
+    "markdown": "#### T\n\n;;;\n\n+++++ +++++\n\n:::\n\n- Item\n  more\n\n;;;\n",
+    "boxed": [false],
+    "layout": {
+      "type": "layout",
+      "children": [
+        {
+          "type": "col",
+          "section_level": 4,
+          "children": [
+            {
+              "type": "-",
+              "content_id": "0.0"
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "-",
+                  "spacer": "row"
+                },
+                {
+                  "type": "col",
+                  "background_kind": "unordered_list",
+                  "children": [
+                    {
+                      "type": "-",
+                      "content_id": "0.1.0.0"
+                    },
+                    {
+                      "type": "-",
+                      "content_id": "0.1.0.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "grouping": {
+      "node_id": "",
+      "content": "",
+      "type": "root",
+      "fingerprint_hash": null,
+      "children": [
+        {
+          "node_id": "0",
+          "content": "",
+          "type": "group",
+          "fingerprint_hash": null,
+          "children": [
+            {
+              "node_id": "0.0",
+              "content": "T",
+              "type": "heading4",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 0,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            },
+            {
+              "node_id": "0.1",
+              "content": "",
+              "type": "group",
+              "fingerprint_hash": null,
+              "children": [
+                {
+                  "node_id": "0.1.0",
+                  "content": "",
+                  "type": "list_item",
+                  "fingerprint_hash": null,
+                  "children": [
+                    {
+                      "node_id": "0.1.0.0",
+                      "content": "Item",
+                      "type": "text",
+                      "fingerprint_hash": null,
+                      "children": [],
+                      "source_line_id": 1,
+                      "rotation_chain": [4],
+                      "text_style_chain": ["root", "heading:4", "unordered_lists"],
+                      "rotation_path": [0],
+                      "avg_word_count": 1.0,
+                      "text_length_category": "one_word",
+                      "content_length_category": "one_word"
+                    },
+                    {
+                      "node_id": "0.1.0.1",
+                      "content": "more",
+                      "type": "text",
+                      "fingerprint_hash": null,
+                      "children": [],
+                      "source_line_id": 2,
+                      "rotation_chain": [4],
+                      "text_style_chain": ["root", "heading:4", "unordered_lists"],
+                      "rotation_path": [0],
+                      "avg_word_count": 1.0,
+                      "text_length_category": "one_word",
+                      "content_length_category": "one_word"
+                    }
+                  ],
+                  "spacer_lead": "+++++ +++++",
+                  "spacer_beside": true,
+                  "rotation_chain": [4],
+                  "text_style_chain": ["root", "heading:4", "unordered_lists"],
+                  "rotation_path": [0],
+                  "avg_word_count": 2.0,
+                  "text_length_category": "one_word",
+                  "content_length_category": "one_word",
+                  "child_types": ["text", "text"],
+                  "child_type_counts": {
+                    "text": 2
+                  },
+                  "glued_content_id": 0
+                }
+              ],
+              "glued_content_group": true,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 2.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word",
+              "child_types": ["list_item"],
+              "child_type_counts": {
+                "list_item": 1
+              }
+            }
+          ],
+          "source_line_id": 0,
+          "heading_group": true,
+          "heading_level": 4,
+          "text_style_chain": ["root", "heading:4"],
+          "avg_word_count": 3.0,
+          "text_length_category": "one_word",
+          "content_length_category": "one_word",
+          "child_types": ["heading4", "group"],
+          "child_type_counts": {
+            "heading4": 1,
+            "group": 1
+          }
+        }
+      ],
+      "source_line_id": 0,
+      "top_heading_level": 4,
+      "text_style_chain": ["root"],
+      "avg_word_count": 3.0,
+      "text_length_category": "one_word",
+      "content_length_category": "one_word",
+      "child_types": ["group"],
+      "child_type_counts": {
+        "group": 1
+      }
+    }
+  },
+  "inside_items": {
+    "markdown": "#### T\n\n- +++++ Item\n- Item +++++\n",
+    "boxed": [true, true],
+    "layout": {
+      "type": "layout",
+      "children": [
+        {
+          "type": "col",
+          "section_level": 4,
+          "children": [
+            {
+              "type": "-",
+              "content_id": "0.0"
+            },
+            {
+              "type": "col",
+              "is_card": true,
+              "children": [
+                {
+                  "type": "row",
+                  "background_kind": "unordered_list",
+                  "children": [
+                    {
+                      "type": "-",
+                      "spacer": "row"
+                    },
+                    {
+                      "type": "-",
+                      "content_id": "0.1.0"
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "background_kind": "unordered_list",
+                  "children": [
+                    {
+                      "type": "-",
+                      "content_id": "0.1.1"
+                    },
+                    {
+                      "type": "-",
+                      "spacer": "row"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "grouping": {
+      "node_id": "",
+      "content": "",
+      "type": "root",
+      "fingerprint_hash": null,
+      "children": [
+        {
+          "node_id": "0",
+          "content": "",
+          "type": "group",
+          "fingerprint_hash": null,
+          "children": [
+            {
+              "node_id": "0.0",
+              "content": "T",
+              "type": "heading4",
+              "fingerprint_hash": null,
+              "children": [],
+              "source_line_id": 0,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 1.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word"
+            },
+            {
+              "node_id": "0.1",
+              "content": "",
+              "type": "group",
+              "fingerprint_hash": null,
+              "children": [
+                {
+                  "node_id": "0.1.0",
+                  "content": "Item",
+                  "type": "list_item",
+                  "fingerprint_hash": null,
+                  "children": [],
+                  "spacer_lead": "+++++",
+                  "source_line_id": 1,
+                  "rotation_chain": [4],
+                  "text_style_chain": ["root", "heading:4", "unordered_lists"],
+                  "rotation_path": [0],
+                  "avg_word_count": 1.0,
+                  "text_length_category": "one_word",
+                  "content_length_category": "one_word",
+                  "glued_content_id": 0
+                },
+                {
+                  "node_id": "0.1.1",
+                  "content": "Item",
+                  "type": "list_item",
+                  "fingerprint_hash": null,
+                  "children": [],
+                  "spacer_trail": "+++++",
+                  "source_line_id": 2,
+                  "rotation_index": 1,
+                  "rotation_chain": [4],
+                  "text_style_chain": ["root", "heading:4", "unordered_lists"],
+                  "rotation_path": [0],
+                  "avg_word_count": 1.0,
+                  "text_length_category": "one_word",
+                  "content_length_category": "one_word",
+                  "glued_content_id": 0
+                }
+              ],
+              "glued_content_group": true,
+              "rotation_chain": [4],
+              "text_style_chain": ["root", "heading:4"],
+              "rotation_path": [0],
+              "avg_word_count": 2.0,
+              "text_length_category": "one_word",
+              "content_length_category": "one_word",
+              "child_types": ["list_item", "list_item"],
+              "child_type_counts": {
+                "list_item": 2
+              }
+            }
+          ],
+          "source_line_id": 0,
+          "heading_group": true,
+          "heading_level": 4,
+          "text_style_chain": ["root", "heading:4"],
+          "avg_word_count": 3.0,
+          "text_length_category": "one_word",
+          "content_length_category": "one_word",
+          "child_types": ["heading4", "group"],
+          "child_type_counts": {
+            "heading4": 1,
+            "group": 1
+          }
+        }
+      ],
+      "source_line_id": 0,
+      "top_heading_level": 4,
+      "text_style_chain": ["root"],
+      "avg_word_count": 3.0,
+      "text_length_category": "one_word",
+      "content_length_category": "one_word",
+      "child_types": ["group"],
+      "child_type_counts": {
+        "group": 1
+      }
+    }
+  }
+}

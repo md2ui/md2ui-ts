@@ -1,0 +1,68 @@
+diff --git a/dist/measurement.js b/dist/measurement.js
+index e264e15c93f17cfa91d9436f7e2196272286539f..641d7edfdba640d9cb4674e4e19514aca44a232e 100644
+--- a/dist/measurement.js
++++ b/dist/measurement.js
+@@ -1,6 +1,22 @@
+ import { getSharedGraphemeSegmenter } from './analysis.js';
+ let measureContext = null;
+ const segmentMetricCaches = new Map();
++// md2ui patch: one measuring context per font string, its font set once. Firefox slows
++// down with every font change followed by a measurement in a Worker (md2ui-ts D10
++// report, step 4); a context that never changes font stays flat in every engine.
++const fontContexts = new Map();
++const cacheContexts = new WeakMap();
++function getFontContext(font) {
++    let ctx = fontContexts.get(font);
++    if (ctx === undefined) {
++        ctx = typeof OffscreenCanvas !== 'undefined'
++            ? new OffscreenCanvas(1, 1).getContext('2d')
++            : document.createElement('canvas').getContext('2d');
++        ctx.font = font;
++        fontContexts.set(font, ctx);
++    }
++    return ctx;
++}
+ let cachedEngineProfile = null;
+ // Safari's prefix-fit policy is useful for ordinary word-sized runs, but letting
+ // it measure every growing prefix of a giant segment recreates a pathological
+@@ -28,13 +44,14 @@ export function getSegmentMetricCache(font) {
+     if (!cache) {
+         cache = new Map();
+         segmentMetricCaches.set(font, cache);
++        cacheContexts.set(cache, getFontContext(font));
+     }
+     return cache;
+ }
+ export function getSegmentMetrics(seg, cache) {
+     let metrics = cache.get(seg);
+     if (metrics === undefined) {
+-        const ctx = getMeasureContext();
++        const ctx = cacheContexts.get(cache);
+         metrics = {
+             width: ctx.measureText(seg).width,
+         };
+@@ -94,8 +111,7 @@ function getEmojiCorrection(font) {
+     if (correction !== undefined)
+         return correction;
+     const fontSize = parseFontSize(font);
+-    const ctx = getMeasureContext();
+-    ctx.font = font;
++    const ctx = getFontContext(font);
+     const canvasW = ctx.measureText('\u{1F600}').width;
+     correction = 0;
+     if (canvasW > fontSize + 0.5 &&
+@@ -195,8 +211,6 @@ export function getSegmentBreakableFitAdvances(seg, metrics, cache, emojiCorrect
+     return metrics.breakableFitAdvances;
+ }
+ export function getFontMeasurementState(font, needsEmojiCorrection) {
+-    const ctx = getMeasureContext();
+-    ctx.font = font;
+     const cache = getSegmentMetricCache(font);
+     const emojiCorrection = needsEmojiCorrection ? getEmojiCorrection(font) : 0;
+     return { cache, emojiCorrection };
+@@ -204,4 +218,5 @@ export function getFontMeasurementState(font, needsEmojiCorrection) {
+ export function clearMeasurementCaches() {
+     segmentMetricCaches.clear();
+     emojiCorrectionCache.clear();
++    fontContexts.clear();
+ }

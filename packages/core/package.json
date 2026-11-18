@@ -1,0 +1,15 @@
+{
+  "name": "@md2ui/core",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "description": "Markdown + theme -> display list. Pure TypeScript, no DOM; text measurement is injected.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@md2ui/contracts": "workspace:*",
+    "shiki": "4.5.0"
+  }
+}

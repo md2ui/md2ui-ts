@@ -1,0 +1,12 @@
+{
+  "name": "@md2ui/contracts",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "description": "Types and JSON schemas shared between md2ui-ts packages. No runtime code.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema/wire/*.json": "./schema/wire/*.json"
+  }
+}

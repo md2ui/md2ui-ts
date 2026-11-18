@@ -1,0 +1,24 @@
+{
+  "name": "@md2ui/site",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The demo page for GitHub Pages. Never published.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base ./",
+    "preview": "vite preview --base ./"
+  },
+  "dependencies": {
+    "@codemirror/lang-markdown": "6.5.2",
+    "@md2ui/dom": "workspace:*",
+    "codemirror": "6.0.2"
+  },
+  "devDependencies": {
+    "vite": "8.3.2"
+  }
+}

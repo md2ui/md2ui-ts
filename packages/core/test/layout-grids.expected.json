@@ -1,0 +1,578 @@
+{
+  "_source": "md2ui 5ba49a1f, 2026-10-04: LayoutGenerator.generate with the stand-in measurer of layout-grids.test.ts",
+  "orphan_left": [
+    "layout",
+    [560.0, 0.0],
+    [
+      [
+        "col",
+        [1.0, 1.0, 1.0],
+        [
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "0.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 6 },
+                        [["-", "0.1.0"], ["-", "0.1.1"]]
+                      ],
+                      ["-", "0.1.2", { "line_split": true, "flow_run": 6 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "1.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 7 },
+                        [["-", "1.1.0"], ["-", "1.1.1"]]
+                      ],
+                      ["-", "1.1.2", { "line_split": true, "flow_run": 7 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "2.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 8 },
+                        [["-", "2.1.0"], ["-", "2.1.1"]]
+                      ],
+                      ["-", "2.1.2", { "line_split": true, "flow_run": 8 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "3.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 9 },
+                        [["-", "3.1.0"], ["-", "3.1.1"]]
+                      ],
+                      ["-", "3.1.2", { "line_split": true, "flow_run": 9 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "4.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 10 },
+                        [["-", "4.1.0"], ["-", "4.1.1"]]
+                      ],
+                      ["-", "4.1.2", { "line_split": true, "flow_run": 10 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "orphan_center": [
+    "layout",
+    [560.0, 0.0],
+    [
+      [
+        "col",
+        [1.0, 1.0, 1.0],
+        [
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "0.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 6 },
+                        [["-", "0.1.0"], ["-", "0.1.1"]]
+                      ],
+                      ["-", "0.1.2", { "line_split": true, "flow_run": 6 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "1.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 7 },
+                        [["-", "1.1.0"], ["-", "1.1.1"]]
+                      ],
+                      ["-", "1.1.2", { "line_split": true, "flow_run": 7 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "2.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 8 },
+                        [["-", "2.1.0"], ["-", "2.1.1"]]
+                      ],
+                      ["-", "2.1.2", { "line_split": true, "flow_run": 8 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "3.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 9 },
+                        [["-", "3.1.0"], ["-", "3.1.1"]]
+                      ],
+                      ["-", "3.1.2", { "line_split": true, "flow_run": 9 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0, 1.0],
+            { "orphan_row": "center" },
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "4.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 10 },
+                        [["-", "4.1.0"], ["-", "4.1.1"]]
+                      ],
+                      ["-", "4.1.2", { "line_split": true, "flow_run": 10 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "orphan_stretch": [
+    "layout",
+    [560.0, 0.0],
+    [
+      [
+        "col",
+        [1.0, 1.0, 1.0],
+        [
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "0.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 10 },
+                        [["-", "0.1.0"], ["-", "0.1.1"]]
+                      ],
+                      ["-", "0.1.2", { "line_split": true, "flow_run": 10 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "1.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 11 },
+                        [["-", "1.1.0"], ["-", "1.1.1"]]
+                      ],
+                      ["-", "1.1.2", { "line_split": true, "flow_run": 11 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "2.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 12 },
+                        [["-", "2.1.0"], ["-", "2.1.1"]]
+                      ],
+                      ["-", "2.1.2", { "line_split": true, "flow_run": 12 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "3.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 13 },
+                        [["-", "3.1.0"], ["-", "3.1.1"]]
+                      ],
+                      ["-", "3.1.2", { "line_split": true, "flow_run": 13 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0],
+            { "grid": true, "grid_cols": 1 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "4.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 14 },
+                        [["-", "4.1.0"], ["-", "4.1.1"]]
+                      ],
+                      ["-", "4.1.2", { "line_split": true, "flow_run": 14 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "orphan_level": [
+    "layout",
+    [560.0, 0.0],
+    [
+      [
+        "col",
+        [1.0, 1.0, 1.0, 1.0],
+        { "section_level": 2 },
+        [
+          ["-", "0"],
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "1.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 10 },
+                        [["-", "1.1.0"], ["-", "1.1.1"]]
+                      ],
+                      ["-", "1.1.2", { "line_split": true, "flow_run": 10 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "2.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 11 },
+                        [["-", "2.1.0"], ["-", "2.1.1"]]
+                      ],
+                      ["-", "2.1.2", { "line_split": true, "flow_run": 11 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0, 1.0],
+            { "grid": true, "grid_cols": 2 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "3.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 12 },
+                        [["-", "3.1.0"], ["-", "3.1.1"]]
+                      ],
+                      ["-", "3.1.2", { "line_split": true, "flow_run": 12 }]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "4.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 13 },
+                        [["-", "4.1.0"], ["-", "4.1.1"]]
+                      ],
+                      ["-", "4.1.2", { "line_split": true, "flow_run": 13 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "row",
+            [1.0],
+            { "grid": true, "grid_cols": 1 },
+            [
+              [
+                "col",
+                [1.0, 1.0],
+                { "is_card": true },
+                [
+                  ["-", "5.0"],
+                  [
+                    "col",
+                    [1.0, 1.0],
+                    { "line_split": true },
+                    [
+                      [
+                        "row",
+                        [98.0, 112.0],
+                        { "line_split": true, "flow_run": 14 },
+                        [["-", "5.1.0"], ["-", "5.1.1"]]
+                      ],
+                      ["-", "5.1.2", { "line_split": true, "flow_run": 14 }]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+}

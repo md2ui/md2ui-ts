@@ -1,0 +1,42 @@
+{
+  "name": "md2ui-ts",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=24.7.0 <25",
+    "pnpm": "10.15.1"
+  },
+  "scripts": {
+    "check": "node scripts/check.ts",
+    "check:browsers": "vitest run --project \"browser (*)\"",
+    "perf": "vitest run --project \"perf (*)\" --silent=false",
+    "conformance": "pnpm --filter @md2ui/conformance run conformance",
+    "typecheck": "tsc -b",
+    "lint": "biome check .",
+    "deps": "depcruise --config .dependency-cruiser.cjs .",
+    "unused": "knip",
+    "test": "vitest run --project node --project \"browser (chromium)\"",
+    "test:node": "vitest run --project node",
+    "test:browser": "vitest run --project \"browser (chromium)\"",
+    "browsers": "playwright install chromium firefox webkit",
+    "packages": "node scripts/packages.ts",
+    "generate:c1": "node scripts/generate-c1.ts"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/core": "0.18.5",
+    "@biomejs/biome": "2.5.15",
+    "@microsoft/api-extractor": "7.59.3",
+    "@types/node": "24.19.1",
+    "@vitest/browser-playwright": "5.0.3",
+    "dependency-cruiser": "18.5.0",
+    "json-schema-to-typescript": "16.0.0",
+    "knip": "6.39.0",
+    "playwright": "1.63.0",
+    "publint": "0.3.25",
+    "rolldown": "1.0.0-beta.59",
+    "tsdown": "0.19.0",
+    "typescript": "6.0.3",
+    "vitest": "5.0.3"
+  }
+}

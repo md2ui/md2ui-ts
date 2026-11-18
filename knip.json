@@ -1,0 +1,26 @@
+{
+  "$schema": "https://unpkg.com/knip@6.39.0/schema.json",
+  "rules": {
+    "files": "error",
+    "dependencies": "error",
+    "devDependencies": "error",
+    "optionalPeerDependencies": "error",
+    "unlisted": "error",
+    "binaries": "error",
+    "unresolved": "error",
+    "exports": "error",
+    "nsExports": "error",
+    "types": "error",
+    "nsTypes": "error",
+    "enumMembers": "error",
+    "duplicates": "error"
+  },
+  "workspaces": {
+    "tools/bundlers": {
+      "entry": ["host/main.js"]
+    },
+    "packages/dom": {
+      "ignoreDependencies": ["flatbush", "shiki"]
+    }
+  }
+}

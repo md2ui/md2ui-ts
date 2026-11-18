@@ -1,0 +1,21 @@
+{
+  "name": "@md2ui/playground",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Dev page. Never published.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@md2ui/dom": "workspace:*",
+    "@md2ui/wire": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "8.3.2"
+  }
+}

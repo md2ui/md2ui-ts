@@ -1,0 +1,50 @@
+// ADR-003: no module-level mutable state. State at module scope lives as long as the
+// module, is shared by every view on the page, and survives between calls. Keep state
+// inside a function or an instance. Module scope means: not inside a function or a
+// class body. Three shapes are caught:
+//   1. a `let` or `var` declaration;
+//   2. a declaration whose value is a mutable object: `new Map/Set/WeakMap/WeakSet/
+//      Array(...)`, or an array or object literal that is not `as const` (a
+//      `satisfies` or a non-const `as` does not make it immutable). Wrap a table in
+//      `Object.freeze(...)` or end it with `as const`;
+//   3. a regex literal with the `g` or `y` flag, whose `lastIndex` is hidden state.
+or {
+  JsVariableDeclaration() as $declaration where {
+    $declaration <: r"(?s)(?:let|var)\s.*",
+    $declaration <: not within or {
+      JsFunctionBody(),
+      JsArrowFunctionExpression(),
+      JsClassDeclaration(),
+      JsClassExpression()
+    },
+    register_diagnostic(span=$declaration, message="[no-module-level-state] A module-level `let`/`var` is mutable state shared by every caller (ADR-003). Keep the state inside a function or an instance.")
+  },
+  JsVariableDeclarator(initializer=JsInitializerClause(expression=$value)) as $declarator where {
+    $value <: or {
+      JsNewExpression() as $new where {
+        $new <: r"(?s)new\s+(?:Map|Set|WeakMap|WeakSet|Array)\b.*"
+      },
+      JsArrayExpression(),
+      JsObjectExpression(),
+      TsSatisfiesExpression(),
+      TsAsExpression() as $cast where { $cast <: not r"(?s).*\bas\s+const\s*" }
+    },
+    $declarator <: not within or {
+      JsFunctionBody(),
+      JsArrowFunctionExpression(),
+      JsClassDeclaration(),
+      JsClassExpression()
+    },
+    register_diagnostic(span=$declarator, message="[no-module-level-state] A module-level mutable object (a Map, Set, array or object literal) is state shared by every caller (ADR-003). Make a table immutable with `as const` or `Object.freeze(...)`, or keep the state inside a function or an instance.")
+  },
+  JsRegexLiteralExpression() as $regex where {
+    $regex <: r"(?s)/.*/[a-z]*[gy][a-z]*",
+    $regex <: not within or {
+      JsFunctionBody(),
+      JsArrowFunctionExpression(),
+      JsClassDeclaration(),
+      JsClassExpression()
+    },
+    register_diagnostic(span=$regex, message="[no-module-level-state] A module-level regex with the `g` or `y` flag carries hidden `lastIndex` state between calls (ADR-003). Drop the flag, or create the regex inside the function that uses it.")
+  }
+}

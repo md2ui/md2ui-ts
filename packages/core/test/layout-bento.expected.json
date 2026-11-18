@@ -1,0 +1,3003 @@
+{
+  "_source": "md2ui 5ba49a1f, 2026-10-04: LayoutGenerator.generate with the stand-in measurer of layout-standin.ts",
+  "bento": {
+    "two-level-8": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 0",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 1",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 2",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 3",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 4",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 5",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 6",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 7",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "row",
+                  [1.0, 4.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.1.0"], ["-", "0.1.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.2.0"], ["-", "0.2.1"]]
+                        ]
+                      ]
+                    ],
+                    [
+                      "row",
+                      [1.0, 1.0, 2.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.3.0"], ["-", "0.3.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.4.0"], ["-", "0.4.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.5.0"], ["-", "0.5.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.6.0"], ["-", "0.6.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.7.0"], ["-", "0.7.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.8.0"], ["-", "0.8.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "1170": [
+          "layout",
+          [1170.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "row",
+                  [2.0, 2.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "row",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.1.0"], ["-", "0.1.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.2.0"], ["-", "0.2.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.3.0"], ["-", "0.3.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.4.0"], ["-", "0.4.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "row",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.5.0"], ["-", "0.5.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.6.0"], ["-", "0.6.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "row",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.7.0"], ["-", "0.7.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.8.0"], ["-", "0.8.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "900": [
+          "layout",
+          [900.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "row",
+                  [2.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "row",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.1.0"], ["-", "0.1.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "bento": true,
+                                "section_level": 2
+                              },
+                              [
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 2
+                                  },
+                                  [["-", "0.2.0"], ["-", "0.2.1"]]
+                                ],
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 2
+                                  },
+                                  [["-", "0.3.0"], ["-", "0.3.1"]]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ],
+                        [
+                          "row",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.4.0"], ["-", "0.4.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "bento": true,
+                                "section_level": 2
+                              },
+                              [
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 2
+                                  },
+                                  [["-", "0.5.0"], ["-", "0.5.1"]]
+                                ],
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 2
+                                  },
+                                  [["-", "0.6.0"], ["-", "0.6.1"]]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.7.0"], ["-", "0.7.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.8.0"], ["-", "0.8.1"]]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "650": [
+          "layout",
+          [650.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "row",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.1.0"], ["-", "0.1.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.2.0"], ["-", "0.2.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.3.0"], ["-", "0.3.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "row",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.4.0"], ["-", "0.4.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.5.0"], ["-", "0.5.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.6.0"], ["-", "0.6.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.7.0"], ["-", "0.7.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.8.0"], ["-", "0.8.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "500": [
+          "layout",
+          [500.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.1.0"], ["-", "0.1.1"]]
+                    ],
+                    [
+                      "row",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0, 1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.2.0"], ["-", "0.2.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.3.0"], ["-", "0.3.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.4.0"], ["-", "0.4.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.5.0"], ["-", "0.5.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.6.0"], ["-", "0.6.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.7.0"], ["-", "0.7.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.8.0"], ["-", "0.8.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "300": [
+          "layout",
+          [300.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.1.0"], ["-", "0.1.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.2.0"], ["-", "0.2.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.3.0"], ["-", "0.3.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.4.0"], ["-", "0.4.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.5.0"], ["-", "0.5.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.6.0"], ["-", "0.6.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.7.0"], ["-", "0.7.1"]]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.8.0"], ["-", "0.8.1"]]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "two-level-6": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 0",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 1",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 2",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 3",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 4",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 5",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "row",
+                  [4.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "row",
+                      [3.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "row",
+                          [1.0, 2.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "0.1.0"], ["-", "0.1.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "bento": true,
+                                "section_level": 2
+                              },
+                              [
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 2
+                                  },
+                                  [["-", "0.2.0"], ["-", "0.2.1"]]
+                                ],
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 2
+                                  },
+                                  [["-", "0.3.0"], ["-", "0.3.1"]]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.4.0"], ["-", "0.4.1"]]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.5.0"], ["-", "0.5.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.6.0"], ["-", "0.6.1"]]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "single-level": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 0",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 1",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 2",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 3",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "row",
+              [4.0, 1.0],
+              {
+                "bento": true,
+                "section_level": 1
+              },
+              [
+                [
+                  "row",
+                  [3.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 1
+                  },
+                  [
+                    [
+                      "row",
+                      [2.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 1
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 1
+                          },
+                          [["-", "0.0"], ["-", "0.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 1
+                          },
+                          [["-", "1.0"], ["-", "1.1"]]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 1
+                      },
+                      [["-", "2.0"], ["-", "2.1"]]
+                    ]
+                  ]
+                ],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 1
+                  },
+                  [["-", "3.0"], ["-", "3.1"]]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "lead-in": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "text",
+            "content": "a lead-in paragraph",
+            "content_length_category": "paragraph",
+            "text_length_category": "paragraph"
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 0",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 1",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "body 2",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                ["-", "0"],
+                [
+                  "row",
+                  [1.0, 4.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "1.0"], ["-", "1.1"]]
+                    ],
+                    [
+                      "row",
+                      [2.0, 2.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "2.0"], ["-", "2.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "3.0"], ["-", "3.1"]]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "two-runs": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "first 0",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "first 1",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "first 2",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "text",
+            "content": "between the runs",
+            "content_length_category": "paragraph",
+            "text_length_category": "paragraph"
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "second 0",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "second 1",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "second 2",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "text",
+                "content": "second 3",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0, 1.0],
+              {
+                "section_level": 2
+              },
+              [
+                [
+                  "row",
+                  [4.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "row",
+                      [3.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "0.0"], ["-", "0.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "1.0"], ["-", "1.1"]]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "2.0"], ["-", "2.1"]]
+                    ]
+                  ]
+                ],
+                ["-", "3"],
+                [
+                  "row",
+                  [4.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "row",
+                      [3.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "row",
+                          [2.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "4.0"], ["-", "4.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "5.0"], ["-", "5.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "6.0"], ["-", "6.1"]]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "7.0"], ["-", "7.1"]]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "767": [
+          "layout",
+          [767.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0, 1.0],
+              {
+                "section_level": 2
+              },
+              [
+                [
+                  "row",
+                  [2.0, 1.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.0"], ["-", "0.1"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "1.0"], ["-", "1.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "2.0"], ["-", "2.1"]]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                ["-", "3"],
+                [
+                  "row",
+                  [1.0, 2.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "4.0"], ["-", "4.1"]]
+                    ],
+                    [
+                      "row",
+                      [1.0, 1.0],
+                      {
+                        "bento": true,
+                        "section_level": 2
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 2
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "5.0"], ["-", "5.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 2
+                              },
+                              [["-", "6.0"], ["-", "6.1"]]
+                            ]
+                          ]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 2
+                          },
+                          [["-", "7.0"], ["-", "7.1"]]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "too-few": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "only",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [["-", "0.1.0"], ["-", "0.1.1"]]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "auto-level": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d00",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d01",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d02",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d10",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d11",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d12",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d20",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d21",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d22",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "row",
+              [2.0, 3.0],
+              {
+                "bento": true,
+                "section_level": 2
+              },
+              [
+                [
+                  "col",
+                  [1.0, 1.0],
+                  {
+                    "section_level": 2
+                  },
+                  [
+                    ["-", "0.0"],
+                    [
+                      "row",
+                      [1.0, 1.0, 1.0],
+                      {
+                        "grid": true,
+                        "grid_cols": 3,
+                        "section_level": 3
+                      },
+                      [
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 3
+                          },
+                          [["-", "0.1.0"], ["-", "0.1.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 3
+                          },
+                          [["-", "0.2.0"], ["-", "0.2.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 3
+                          },
+                          [["-", "0.3.0"], ["-", "0.3.1"]]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "row",
+                  [1.0, 2.0],
+                  {
+                    "bento": true,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0, 1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "1.0"],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 3
+                          },
+                          [["-", "1.1.0"], ["-", "1.1.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 3
+                          },
+                          [["-", "1.2.0"], ["-", "1.2.1"]]
+                        ],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "section_level": 3
+                          },
+                          [["-", "1.3.0"], ["-", "1.3.1"]]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "2.0"],
+                        [
+                          "row",
+                          [1.0, 1.0, 1.0],
+                          {
+                            "grid": true,
+                            "grid_cols": 3,
+                            "section_level": 3
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "2.1.0"], ["-", "2.1.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "2.2.0"], ["-", "2.2.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "2.3.0"], ["-", "2.3.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "manual-level": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d00",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d01",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d02",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d10",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d11",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d12",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "Heading level 2",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d20",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d21",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading3",
+                    "content": "Heading level 3",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "d22",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 3
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nLayout: Bento\n\n## Content arrangement\n\n### Bento\nHeading level: 3\n",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0],
+              [
+                [
+                  "row",
+                  [1.0, 1.0, 1.0],
+                  {
+                    "grid": true,
+                    "grid_cols": 3,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "0.0"],
+                        [
+                          "row",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 3
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "0.1.0"], ["-", "0.1.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "bento": true,
+                                "section_level": 3
+                              },
+                              [
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 3
+                                  },
+                                  [["-", "0.2.0"], ["-", "0.2.1"]]
+                                ],
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 3
+                                  },
+                                  [["-", "0.3.0"], ["-", "0.3.1"]]
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "1.0"],
+                        [
+                          "col",
+                          [1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 3
+                          },
+                          [
+                            [
+                              "row",
+                              [1.0, 1.0],
+                              {
+                                "bento": true,
+                                "section_level": 3
+                              },
+                              [
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 3
+                                  },
+                                  [["-", "1.1.0"], ["-", "1.1.1"]]
+                                ],
+                                [
+                                  "col",
+                                  [1.0, 1.0],
+                                  {
+                                    "section_level": 3
+                                  },
+                                  [["-", "1.2.0"], ["-", "1.2.1"]]
+                                ]
+                              ]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "1.3.0"], ["-", "1.3.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "2.0"],
+                        [
+                          "col",
+                          [1.0, 1.0, 1.0],
+                          {
+                            "bento": true,
+                            "section_level": 3
+                          },
+                          [
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "2.1.0"], ["-", "2.1.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "2.2.0"], ["-", "2.2.1"]]
+                            ],
+                            [
+                              "col",
+                              [1.0, 1.0],
+                              {
+                                "section_level": 3
+                              },
+                              [["-", "2.3.0"], ["-", "2.3.1"]]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "default-mode": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading1",
+                "content": "Heading level 1",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 0",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 1",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 2",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 3",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 4",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "heading2",
+                    "content": "Heading level 2",
+                    "content_length_category": "very_short",
+                    "text_length_category": "very_short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "cell body 5",
+                    "content_length_category": "medium",
+                    "text_length_category": "medium"
+                  }
+                ],
+                "heading_group": true,
+                "heading_level": 2
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 1
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              {
+                "section_level": 1
+              },
+              [
+                ["-", "0.0"],
+                [
+                  "row",
+                  [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                  {
+                    "grid": true,
+                    "grid_cols": 6,
+                    "section_level": 2
+                  },
+                  [
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.1.0"], ["-", "0.1.1"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.2.0"], ["-", "0.2.1"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.3.0"], ["-", "0.3.1"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.4.0"], ["-", "0.4.1"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.5.0"], ["-", "0.5.1"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "section_level": 2
+                      },
+                      [["-", "0.6.0"], ["-", "0.6.1"]]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  }
+}

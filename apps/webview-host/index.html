@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>md2ui</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+      html { -webkit-text-size-adjust: 100%; }
+      body { -webkit-tap-highlight-color: transparent; }
+      /* One view fills the screen and scrolls itself, as on the site. */
+      md2ui-view { height: 100dvh; }
+      #hud {
+        position: fixed; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); z-index: 1;
+        padding: 6px 10px; border-radius: 8px; background: rgb(0 0 0 / 0.75); color: #ffffff;
+        font: 12px/1.2 ui-monospace, Menlo, monospace; pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <md2ui-view id="view"></md2ui-view>
+    <div id="hud" hidden></div>
+    <script type="module">
+      import { startWebviewHost } from "./src/index.ts";
+
+      startWebviewHost(document.getElementById("view"), document.getElementById("hud"));
+    </script>
+  </body>
+</html>

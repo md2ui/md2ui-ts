@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "tsBuildInfoFile": "node_modules/.cache/tsc/tools.tsbuildinfo",
+    "types": ["node"]
+  },
+  "include": ["scripts", "vitest.config.ts", "packages/*/tsdown.config.ts", "apps/*/vite.config.ts"]
+}

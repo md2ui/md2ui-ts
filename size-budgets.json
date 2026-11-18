@@ -1,0 +1,23 @@
+{
+  "$comment": "Bytes per published entry of each buildable package (its `publishConfig.exports`; `@md2ui/dom/worker` is the Worker's), minified and gzipped (ADR-006; checked by scripts/packages.ts size): the entry and what it imports statically, everything inlined but its peers and the other buildable packages, which have budgets of their own, so every byte is counted once. A chunk loaded on demand is not shipped with the entry. A budget is set from a measured build plus a margin. It is raised only by a recorded decision that names what the bytes buy (ADR-006).",
+  "@md2ui/dom": {
+    "minified": 197700,
+    "gzip": 67400
+  },
+  "@md2ui/dom/worker": {
+    "minified": 572500,
+    "gzip": 183600
+  },
+  "@md2ui/react": {
+    "minified": 1125,
+    "gzip": 600
+  },
+  "@md2ui/vue": {
+    "minified": 1200,
+    "gzip": 625
+  },
+  "@md2ui/wire": {
+    "minified": 7900,
+    "gzip": 3250
+  }
+}

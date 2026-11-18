@@ -1,0 +1,48 @@
+{
+  "name": "@md2ui/wire",
+  "version": "0.1.0-alpha.1",
+  "description": "md2ui wire-protocol client with an injected transport. Optional.",
+  "keywords": [
+    "md2ui",
+    "markdown",
+    "websocket",
+    "protocol",
+    "generative-ui",
+    "agent"
+  ],
+  "homepage": "https://md2ui.org",
+  "bugs": {
+    "url": "https://github.com/md2ui/md2ui-ts/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md2ui/md2ui-ts.git",
+    "directory": "packages/wire"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "dist/lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha",
+    "exports": {
+      ".": {
+        "types": "./dist/lib/index.d.ts",
+        "default": "./dist/lib/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -b && tsdown"
+  },
+  "devDependencies": {
+    "@md2ui/contracts": "workspace:*",
+    "ajv": "8.20.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@md2ui/webview-host",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The page a native app's web view loads to show <md2ui-view>. Never published.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@md2ui/dom": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "8.3.2"
+  }
+}

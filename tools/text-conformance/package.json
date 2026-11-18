@@ -1,0 +1,19 @@
+{
+  "name": "@md2ui/text-conformance",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Dev-only: runs Pretext on md2ui's recorded font answers and classifies where its lines differ from md2ui's (ADR-403).",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@md2ui/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@chenglou/pretext": "0.0.9",
+    "@md2ui/core": "workspace:*",
+    "@md2ui/text-pretext": "workspace:*"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@md2ui/bundlers",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Dev-only check that webpack and Parcel ship @md2ui/dom's Worker. Never published.",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "check": "node src/check.ts"
+  },
+  "devDependencies": {
+    "@md2ui/dom": "workspace:*",
+    "@parcel/config-default": "2.16.4",
+    "@parcel/core": "2.16.4",
+    "playwright": "1.63.0",
+    "webpack": "5.112.2"
+  }
+}

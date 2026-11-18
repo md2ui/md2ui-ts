@@ -1,0 +1,106 @@
+# Publishes @md2ui/dom, @md2ui/wire, @md2ui/react and @md2ui/vue to npm on a release tag
+# (`v0.1.0-alpha.1`, as md2ui tags its releases), under each package's dist-tag (`alpha`).
+#
+# npm trusts this workflow by name (trusted publishing): on npmjs.com, each of the four
+# packages names owner `md2ui`, repository `md2ui-ts`, workflow `release.yml` and
+# environment `npm`. Renaming this file or the environment breaks publishing until the
+# four packages are updated there. Every publish carries provenance. The first release,
+# before the packages exist, uses a token instead (see the publish step).
+#
+# The same tag also runs pages.yml, which deploys md2ui.org: its `github-pages`
+# environment must allow tags `v*`, and md2ui.org's DNS must point at GitHub Pages.
+#
+# pnpm packs each package, because only pnpm applies `publishConfig.exports` and turns
+# `workspace:*` into the released version; npm then publishes the tarballs, because npm
+# is what speaks trusted publishing. A version, once published, can never be published
+# again: run this by hand with `dry-run` first.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Pack and check everything, publish nothing
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  PACKAGES: dom wire react vue # dom first: react and vue depend on it
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.7.0
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - name: The tag names the version every published package carries
+        if: github.ref_type == 'tag'
+        run: |
+          for p in $PACKAGES; do
+            v=$(node -p "require('./packages/$p/package.json').version")
+            [ "v$v" = "$GITHUB_REF_NAME" ] || { echo "::error::@md2ui/$p is $v, the tag is $GITHUB_REF_NAME"; exit 1; }
+          done
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test:node
+      - name: Build
+        run: for p in $PACKAGES; do pnpm --filter "@md2ui/$p" build; done
+      - name: Package shape (publint, attw, patched and published dependencies)
+        run: node scripts/packages.ts shape
+      - name: Pack
+        run: for p in $PACKAGES; do pnpm --filter "@md2ui/$p" pack --pack-destination "$PWD/tarballs"; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tarballs
+          path: tarballs/*.tgz
+          if-no-files-found: error
+
+  publish:
+    needs: pack
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: npm
+      url: https://www.npmjs.com/org/md2ui
+    permissions:
+      contents: read
+      id-token: write # trusted publishing and provenance
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.7.0
+          registry-url: https://registry.npmjs.org
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarballs
+          path: tarballs
+      - name: Publish, dom first
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry-run && '--dry-run' || '' }}
+          # npm has no pending publisher: a package must exist before it can trust this
+          # workflow. So the first release publishes with a granular token, limited to
+          # the @md2ui scope, with publish rights and a short expiry, kept as the `npm`
+          # environment's NPM_TOKEN secret; once all four packages trust this workflow,
+          # the token and the secret are deleted and later releases need neither.
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm --version
+          # --provenance: trusted publishing attests provenance by itself, a token
+          # does not, so the first release asks for it (id-token: write, above).
+          for p in $PACKAGES; do
+            npm publish tarballs/md2ui-$p-*.tgz --access public --tag alpha --provenance $DRY_RUN
+          done

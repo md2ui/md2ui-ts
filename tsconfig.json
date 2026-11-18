@@ -1,0 +1,86 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/contracts"
+    },
+    {
+      "path": "packages/contracts/test"
+    },
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/core/test"
+    },
+    {
+      "path": "packages/text-pretext"
+    },
+    {
+      "path": "packages/text-pretext/test"
+    },
+    {
+      "path": "packages/painter-canvas"
+    },
+    {
+      "path": "packages/painter-canvas/test"
+    },
+    {
+      "path": "packages/dom"
+    },
+    {
+      "path": "packages/dom/test"
+    },
+    {
+      "path": "packages/react"
+    },
+    {
+      "path": "packages/react/test"
+    },
+    {
+      "path": "packages/vue"
+    },
+    {
+      "path": "packages/vue/test"
+    },
+    {
+      "path": "packages/wire"
+    },
+    {
+      "path": "packages/wire/test"
+    },
+    {
+      "path": "tools/conformance"
+    },
+    {
+      "path": "tools/conformance/test"
+    },
+    {
+      "path": "tools/bundlers"
+    },
+    {
+      "path": "tools/text-conformance"
+    },
+    {
+      "path": "tools/text-conformance/test"
+    },
+    {
+      "path": "apps/playground"
+    },
+    {
+      "path": "apps/playground/test"
+    },
+    {
+      "path": "apps/site"
+    },
+    {
+      "path": "apps/webview-host"
+    },
+    {
+      "path": "tsconfig.tools.json"
+    },
+    {
+      "path": "test"
+    }
+  ]
+}

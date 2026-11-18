@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "md2ui client frame, v1",
+  "description": "One frame from a frontend to an md2ui server. Spec: protocol/README.md. Unknown keys are ignored. A hello, event or typing frame is at most 512 bytes, and a prompt frame at most 8 KB with at most 4 KB of text; a schema cannot express byte sizes, and maxLength counts characters.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/hello"
+    },
+    {
+      "$ref": "#/$defs/event"
+    },
+    {
+      "$ref": "#/$defs/prompt"
+    },
+    {
+      "$ref": "#/$defs/typing"
+    }
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{1,64}$"
+    },
+    "nat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "hello": {
+      "type": "object",
+      "required": [
+        "t",
+        "v"
+      ],
+      "properties": {
+        "t": {
+          "const": "h"
+        },
+        "v": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "t",
+        "m",
+        "x",
+        "q"
+      ],
+      "properties": {
+        "t": {
+          "const": "e"
+        },
+        "m": {
+          "$ref": "#/$defs/id"
+        },
+        "x": {
+          "$ref": "#/$defs/nat"
+        },
+        "q": {
+          "$ref": "#/$defs/nat"
+        },
+        "a": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "c": {
+          "type": "boolean"
+        },
+        "v": {
+          "description": "The value a target asks for. The RANGE is the target's, authored in the document, and is checked by the server \u2014 not here.",
+          "type": "number"
+        },
+        "vs": {
+          "description": "Other targets this event commits: [ordinal, value], a bool for a checkbox's state and a number for a slider's value. The fired x may not appear, and no ordinal twice.",
+          "type": "array",
+          "maxItems": 32,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "prefixItems": [
+              {
+                "$ref": "#/$defs/nat"
+              },
+              {
+                "oneOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "prompt": {
+      "type": "object",
+      "required": [
+        "t",
+        "q",
+        "tx"
+      ],
+      "properties": {
+        "t": {
+          "const": "p"
+        },
+        "q": {
+          "$ref": "#/$defs/nat"
+        },
+        "tx": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        }
+      }
+    },
+    "typing": {
+      "description": "The user is typing in the frontend's own field: no text, and at most one a second while keys are pressed (ADR-601).",
+      "type": "object",
+      "required": [
+        "t"
+      ],
+      "properties": {
+        "t": {
+          "const": "k"
+        }
+      }
+    }
+  }
+}

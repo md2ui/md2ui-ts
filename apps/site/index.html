@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>md2ui</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+      html, body { height: 100%; margin: 0; }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+        font: 500 14px/1 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        background: #ffffff;
+        color: #000000;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+        padding: 10px 16px;
+        background: #ffffff;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      header strong { margin-right: auto; font-size: 16px; letter-spacing: -0.01em; }
+      label { display: flex; align-items: center; gap: 6px; }
+      label span { font-size: 12px; color: #555555; }
+      select {
+        appearance: none;
+        font: inherit;
+        color: #ffffff;
+        background: #000000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 12px center;
+        border: 0;
+        border-radius: 8px;
+        padding: 8px 32px 8px 12px;
+        cursor: pointer;
+      }
+      select:focus-visible, button:focus-visible { outline: 2px solid #000000; outline-offset: 2px; }
+      button {
+        font: inherit;
+        color: #ffffff;
+        background: #000000;
+        border: 1.5px solid #000000;
+        border-radius: 8px;
+        padding: 7px 14px;
+        cursor: pointer;
+      }
+      button[aria-pressed="true"] { color: #000000; background: #ffffff; }
+      #design-source { color: #000000; font-size: 13px; text-underline-offset: 3px; }
+      #design-source[hidden] { display: none; }
+      button:disabled { opacity: 0.35; cursor: default; }
+      main { flex: 1; min-height: 0; display: flex; }
+      #panel {
+        display: flex;
+        flex-direction: column;
+        width: min(42%, 640px);
+        min-width: 320px;
+        border-right: 1px solid #e5e5e5;
+        background: #ffffff;
+      }
+      #panel[hidden] { display: none; }
+      #panel > div:first-child {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px 8px 16px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 12px;
+        color: #555555;
+      }
+      #source-name { margin-right: auto; font-family: ui-monospace, monospace; }
+      #panel button { padding: 4px 10px; font-size: 12px; }
+      #source { flex: 1; min-height: 0; overflow: hidden; }
+      #source .cm-editor { height: 100%; font-size: 13px; }
+      #source .cm-scroller { font-family: ui-monospace, "JetBrains Mono", monospace; }
+      md2ui-view { flex: 1; min-width: 0; min-height: 0; }
+      @media (max-width: 767px) {
+        main { flex-direction: column; }
+        #panel { width: auto; min-width: 0; height: 45%; border-right: 0; border-bottom: 1px solid #e5e5e5; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>md2ui</strong>
+      <label><span>Content</span><select id="content"></select></label>
+      <label><span>Theme</span><select id="theme"></select></label>
+      <label><span>Layout</span><select id="layout"></select></label>
+      <a id="design-source" href="https://github.com/md2ui/md2ui-ts" target="_blank" rel="noopener" hidden>Source ↗</a>
+      <button id="edit" type="button" aria-pressed="false" aria-controls="panel">Edit</button>
+    </header>
+    <main>
+      <aside id="panel" hidden aria-label="Markdown source">
+        <div><span id="source-name"></span><span>edits stay in this tab</span><button id="reset" type="button" disabled>Reset</button></div>
+        <div id="source"></div>
+      </aside>
+      <md2ui-view id="view"></md2ui-view>
+    </main>
+    <script type="module">
+      import { startSite } from "./src/index.ts";
+
+      startSite(document.getElementById("view"), {
+        content: document.getElementById("content"),
+        theme: document.getElementById("theme"),
+        layout: document.getElementById("layout"),
+        edit: document.getElementById("edit"),
+        panel: document.getElementById("panel"),
+        source: document.getElementById("source"),
+        sourceName: document.getElementById("source-name"),
+        reset: document.getElementById("reset"),
+        designSource: document.getElementById("design-source"),
+      });
+    </script>
+  </body>
+</html>

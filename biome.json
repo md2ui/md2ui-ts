@@ -1,0 +1,85 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!**/pnpm-lock.yaml", "!packages/contracts/schema/wire"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "style": {
+        "useConst": "error",
+        "noNonNullAssertion": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "error",
+        "noVar": "error"
+      },
+      "complexity": {
+        "useLiteralKeys": "off"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "path": "./lint/no-module-level-state.grit",
+      "includes": ["**/packages/*/src/**/*.ts"]
+    }
+  ],
+  "overrides": [
+    {
+      "includes": ["packages/contracts/**", "packages/core/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedGlobals": {
+              "level": "error",
+              "options": {
+                "deniedGlobals": {
+                  "document": "[no-dom-in-core] `document` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "window": "[no-dom-in-core] `window` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "navigator": "[no-dom-in-core] `navigator` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "location": "[no-dom-in-core] `location` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "history": "[no-dom-in-core] `history` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "localStorage": "[no-dom-in-core] `localStorage` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "sessionStorage": "[no-dom-in-core] `sessionStorage` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "HTMLElement": "[no-dom-in-core] `HTMLElement` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "Element": "[no-dom-in-core] `Element` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "Node": "[no-dom-in-core] `Node` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "customElements": "[no-dom-in-core] `customElements` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "requestAnimationFrame": "[no-dom-in-core] `requestAnimationFrame` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "ResizeObserver": "[no-dom-in-core] `ResizeObserver` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "OffscreenCanvas": "[no-dom-in-core] `OffscreenCanvas` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "HTMLCanvasElement": "[no-dom-in-core] `HTMLCanvasElement` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "CanvasRenderingContext2D": "[no-dom-in-core] `CanvasRenderingContext2D` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "getComputedStyle": "[no-dom-in-core] `getComputedStyle` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "matchMedia": "[no-dom-in-core] `matchMedia` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract.",
+                  "self": "[no-dom-in-core] `self` is a DOM/browser global; contracts and core run without a DOM (ADR-003). Inject what you need through a contract."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

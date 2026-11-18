@@ -1,0 +1,64 @@
+{
+  "name": "@md2ui/dom",
+  "version": "0.1.0-alpha.1",
+  "description": "The host and the <md2ui-view> custom element.",
+  "keywords": [
+    "md2ui",
+    "markdown",
+    "custom-element",
+    "web-component",
+    "canvas",
+    "generative-ui",
+    "agent"
+  ],
+  "homepage": "https://md2ui.org",
+  "bugs": {
+    "url": "https://github.com/md2ui/md2ui-ts/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md2ui/md2ui-ts.git",
+    "directory": "packages/dom"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./worker": "./src/worker.ts"
+  },
+  "files": [
+    "dist/lib",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha",
+    "exports": {
+      ".": {
+        "types": "./dist/lib/index.d.ts",
+        "default": "./dist/lib/index.js"
+      },
+      "./worker": {
+        "types": "./dist/lib/worker.d.ts",
+        "default": "./dist/lib/worker.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -b && tsdown"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@md2ui/contracts": "workspace:*",
+    "@md2ui/core": "workspace:*",
+    "@md2ui/painter-canvas": "workspace:*",
+    "@md2ui/text-pretext": "workspace:*"
+  },
+  "dependencies": {
+    "comlink": "4.4.2",
+    "flatbush": "4.6.2",
+    "image-dimensions": "2.6.0",
+    "shiki": "4.5.0"
+  }
+}

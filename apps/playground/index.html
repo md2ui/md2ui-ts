@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>md2ui playground</title>
+    <style>
+      body { margin: 0; font: 15px Helvetica, Arial, sans-serif; background: #ececf0; }
+      main { max-width: 760px; margin: 0 auto; padding: 16px; display: grid; gap: 12px; }
+      md2ui-view { border-radius: 12px; }
+      #working { margin: 0; min-height: 1.2em; font-size: 13px; color: #6b6b75; }
+      #working:not(:empty)::after { content: "\2026"; }
+      input { font: inherit; padding: 10px 12px; border: 1px solid #c8c8d0; border-radius: 10px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="thread" style="display: grid; gap: 12px"></div>
+      <p id="working" aria-live="polite"></p>
+      <input id="prompt" placeholder="Type to the agent, then Enter" />
+    </main>
+    <script type="module">
+      import { startPlayground } from "./src/index.ts";
+
+      startPlayground(
+        document.getElementById("thread"),
+        document.getElementById("prompt"),
+        document.getElementById("working"),
+      );
+    </script>
+  </body>
+</html>

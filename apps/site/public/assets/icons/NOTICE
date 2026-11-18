@@ -1,0 +1,13 @@
+md2ui icon font
+Copyright 2026 alexramvarela
+
+material-design-icons-md2ui.ttf is a modified version of Material Symbols Outlined,
+Copyright Google LLC, licensed under the Apache License, Version 2.0 (LICENSE in this
+folder).
+
+Changes made to the original: its icons are subset, rescaled and remapped to emoji
+codepoints, and the font family is renamed. The font is built from the original by
+scripts/build_icon_font.py in the md2ui repository, from the table in
+material-design-icons-md2ui.md.
+
+Original: https://github.com/google/material-design-icons

@@ -1,0 +1,15 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["ES2024", "DOM"],
+    "types": []
+  },
+  "include": ["."],
+  "references": [
+    { "path": ".." },
+    { "path": "../../../packages/contracts" },
+    { "path": "../../../packages/core" },
+    { "path": "../../../packages/text-pretext" }
+  ]
+}

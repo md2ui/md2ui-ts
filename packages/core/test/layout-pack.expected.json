@@ -1,0 +1,946 @@
+{
+  "_source": "md2ui 5ba49a1f, 2026-10-04: LayoutGenerator.generate with the stand-in measurer of layout-standin.ts",
+  "pack": {
+    "abc": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "a",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1000": [
+          "layout",
+          [1000.0, 0.0],
+          [
+            [
+              "col",
+              [1.0],
+              [
+                [
+                  "row",
+                  [164.0, 328.0, 492.0],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "1.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "2.0"]]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "420": [
+          "layout",
+          [420.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                [
+                  "row",
+                  [137.33333333333334, 274.6666666666667],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "1.0"]]
+                    ]
+                  ]
+                ],
+                ["col", [1.0], [["-", "2.0"]]]
+              ]
+            ]
+          ]
+        ],
+        "400": [
+          "layout",
+          [400.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                [
+                  "row",
+                  [130.66666666666666, 261.3333333333333],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "1.0"]]
+                    ]
+                  ]
+                ],
+                ["col", [1.0], [["-", "2.0"]]]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "abcd": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "a",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "emoji",
+                "content": "d",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1000": [
+          "layout",
+          [1000.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                [
+                  "row",
+                  [330.66666666666663, 661.3333333333333],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "1.0"]]
+                    ]
+                  ]
+                ],
+                [
+                  "row",
+                  [425.1428571428571, 566.8571428571429],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "2.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "3.0"]]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "700": [
+          "layout",
+          [700.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                [
+                  "row",
+                  [114.0, 228.0, 342.0],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "1.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "2.0"]]
+                    ]
+                  ]
+                ],
+                ["col", [1.0], [["-", "3.0"]]]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "wide-b": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "wide",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "500": [
+          "layout",
+          [500.0, 0.0],
+          [["col", [1.0, 1.0], [["col", [1.0], [["-", "0.0"]]], ["col", [1.0], [["-", "1.0"]]]]]]
+        ]
+      }
+    },
+    "abc-no": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "a",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "# T\n\n## Background styles and Spacing\n\n### Root\nStack sections: no\n",
+      "layouts": {
+        "1000": [
+          "layout",
+          [1000.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0, 1.0],
+              [
+                ["col", [1.0], [["-", "0.0"]]],
+                ["col", [1.0], [["-", "1.0"]]],
+                ["col", [1.0], [["-", "2.0"]]]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "leaf-first": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "text",
+            "content": "a",
+            "content_length_category": "short",
+            "text_length_category": "short"
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1000": [
+          "layout",
+          [1000.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                ["-", "0"],
+                [
+                  "row",
+                  [396.8, 595.2],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "1.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "2.0"]]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "owns-column_split_group": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "a",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "column_split_group": true,
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1000": [
+          "layout",
+          [1000.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0, 1.0],
+              [
+                ["col", [1.0], [["-", "0.0"]]],
+                ["col", [1.0], [["-", "1.0"]]],
+                ["col", [1.0], [["-", "2.0"]]]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "owns-line_split_group": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "a",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "link",
+                "content": "b",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "line_split_group": true,
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1000": [
+          "layout",
+          [1000.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0, 1.0],
+              [
+                ["col", [1.0], [["-", "0.0"]]],
+                [
+                  "-",
+                  "1.0",
+                  {
+                    "line_split": true
+                  }
+                ],
+                ["col", [1.0], [["-", "2.0"]]]
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "run-block": {
+      "doc": {
+        "type": "group",
+        "content": "",
+        "children": [
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "text",
+                "content": "a",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "heading2",
+                "content": "",
+                "content_length_category": "very_short",
+                "text_length_category": "very_short"
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "text",
+                    "content": "xxxxxxxxxxxxxxxxxxxx",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "one",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ]
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "text",
+                    "content": "yyyyyyyyyyyyyyyyyyyy",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "one",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ]
+              },
+              {
+                "type": "group",
+                "content": "",
+                "children": [
+                  {
+                    "type": "text",
+                    "content": "zzzzzzzzzzzzzzzzzzzz",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  },
+                  {
+                    "type": "text",
+                    "content": "one",
+                    "content_length_category": "short",
+                    "text_length_category": "short"
+                  }
+                ]
+              }
+            ],
+            "heading_group": true,
+            "heading_level": 2
+          },
+          {
+            "type": "group",
+            "content": "",
+            "children": [
+              {
+                "type": "inline_code",
+                "content": "c",
+                "content_length_category": "short",
+                "text_length_category": "short"
+              }
+            ],
+            "heading_group": true
+          }
+        ]
+      },
+      "theme": "",
+      "layouts": {
+        "1280": [
+          "layout",
+          [1280.0, 0.0],
+          [
+            [
+              "col",
+              [1.0],
+              [
+                [
+                  "row",
+                  [151.19617224880383, 659.2153110047847, 453.58851674641147],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "fill_row": true
+                      },
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "1.0"],
+                        [
+                          "row",
+                          [1.0, 1.0, 1.0],
+                          {
+                            "grid": true,
+                            "grid_cols": 3
+                          },
+                          [
+                            ["col", [1.0, 1.0], [["-", "1.1.0"], ["-", "1.1.1"]]],
+                            ["col", [1.0, 1.0], [["-", "1.2.0"], ["-", "1.2.1"]]],
+                            ["col", [1.0, 1.0], [["-", "1.3.0"], ["-", "1.3.1"]]]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "2.0"]]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "767": [
+          "layout",
+          [767.0, 0.0],
+          [
+            [
+              "col",
+              [1.0, 1.0],
+              [
+                [
+                  "row",
+                  [141.6044776119403, 617.3955223880597],
+                  [
+                    [
+                      "col",
+                      [1.0],
+                      {
+                        "fill_row": true
+                      },
+                      [["-", "0.0"]]
+                    ],
+                    [
+                      "col",
+                      [1.0, 1.0],
+                      {
+                        "fill_row": true
+                      },
+                      {
+                        "section_level": 2
+                      },
+                      [
+                        ["-", "1.0"],
+                        [
+                          "row",
+                          [1.0, 1.0, 1.0],
+                          {
+                            "grid": true,
+                            "grid_cols": 3
+                          },
+                          [
+                            ["col", [1.0, 1.0], [["-", "1.1.0"], ["-", "1.1.1"]]],
+                            ["col", [1.0, 1.0], [["-", "1.2.0"], ["-", "1.2.1"]]],
+                            ["col", [1.0, 1.0], [["-", "1.3.0"], ["-", "1.3.1"]]]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                ["col", [1.0], [["-", "2.0"]]]
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "cache": {
+    "doc": {
+      "type": "group",
+      "content": "",
+      "children": [
+        {
+          "type": "group",
+          "content": "",
+          "children": [
+            {
+              "type": "link",
+              "content": "b",
+              "content_length_category": "short",
+              "text_length_category": "short"
+            }
+          ],
+          "heading_group": true
+        },
+        {
+          "type": "group",
+          "content": "",
+          "children": [
+            {
+              "type": "text",
+              "content": "wide",
+              "content_length_category": "short",
+              "text_length_category": "short"
+            }
+          ],
+          "heading_group": true
+        }
+      ]
+    },
+    "fresh767": [
+      "layout",
+      [767.0, 0.0],
+      [
+        [
+          "col",
+          [1.0],
+          [
+            [
+              "row",
+              [260.1542416452442, 498.8457583547558],
+              [
+                [
+                  "col",
+                  [1.0],
+                  {
+                    "fill_row": true
+                  },
+                  [["-", "0.0"]]
+                ],
+                [
+                  "col",
+                  [1.0],
+                  {
+                    "fill_row": true
+                  },
+                  [["-", "1.0"]]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "fresh767Calls": 2,
+    "reused767": [
+      "layout",
+      [767.0, 0.0],
+      [["col", [1.0, 1.0], [["col", [1.0], [["-", "0.0"]]], ["col", [1.0], [["-", "1.0"]]]]]]
+    ],
+    "reused767Calls": 0,
+    "fresh1280Calls": 2
+  }
+}

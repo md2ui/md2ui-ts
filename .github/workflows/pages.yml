@@ -1,0 +1,47 @@
+# Builds apps/site and publishes it to GitHub Pages. In the repository's settings,
+# Pages → Source must be "GitHub Actions".
+#
+# It deploys on a release tag (`v0.1.0-alpha.1`, as md2ui tags its releases), so the home
+# page shows what a release ships, or by hand. The `github-pages` environment's
+# deployment rules must allow tags `v*` (Settings → Environments → github-pages):
+# by default it accepts only the default branch, and refuses a tag's deployment.
+name: Pages
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.7.0
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @md2ui/site build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

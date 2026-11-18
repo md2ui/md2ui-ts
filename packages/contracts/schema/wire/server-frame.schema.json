@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "md2ui server frame, v1",
+  "description": "One frame from an md2ui server to a frontend. Spec: protocol/README.md. Unknown keys are ignored. A frame is at most 256 KB as encoded UTF-8 JSON; a schema cannot express byte sizes, so maxLength on md is only the bound that follows from it in characters (each is at least one byte), and a frame within it may still be too large.",
+  "oneOf": [
+    {"$ref": "#/$defs/message"},
+    {"$ref": "#/$defs/delta"},
+    {"$ref": "#/$defs/end"},
+    {"$ref": "#/$defs/error"},
+    {"$ref": "#/$defs/state"}
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9._:-]{1,64}$"},
+    "nat": {"type": "integer", "minimum": 0},
+    "message": {
+      "type": "object",
+      "required": ["t", "m", "md"],
+      "properties": {
+        "t": {"const": "m"},
+        "m": {"$ref": "#/$defs/id"},
+        "r": {"$ref": "#/$defs/id"},
+        "md": {"type": "string", "maxLength": 262144}
+      }
+    },
+    "delta": {
+      "type": "object",
+      "required": ["t", "m", "s", "md"],
+      "properties": {
+        "t": {"const": "d"},
+        "m": {"$ref": "#/$defs/id"},
+        "s": {"$ref": "#/$defs/nat"},
+        "md": {"type": "string", "maxLength": 262144}
+      }
+    },
+    "end": {
+      "type": "object",
+      "required": ["t", "m", "h"],
+      "properties": {
+        "t": {"const": "z"},
+        "m": {"$ref": "#/$defs/id"},
+        "h": {"type": "string", "pattern": "^[0-9a-f]{16}$"}
+      }
+    },
+    "error": {
+      "type": "object",
+      "required": ["t", "code"],
+      "properties": {
+        "t": {"const": "x"},
+        "code": {
+          "enum": [
+            "bad_frame",
+            "too_large",
+            "bad_version",
+            "unknown_message",
+            "stale",
+            "bad_target",
+            "not_forwarded",
+            "slug_mismatch",
+            "bad_value",
+            "duplicate"
+          ]
+        },
+        "m": {"$ref": "#/$defs/id"},
+        "q": {"$ref": "#/$defs/nat"}
+      }
+    },
+    "state": {
+      "type": "object",
+      "required": ["t", "s"],
+      "properties": {
+        "t": {"const": "s"},
+        "s": {"enum": ["l", "w", "i"]},
+        "n": {"type": "string", "maxLength": 200},
+        "ph": {"type": "string", "maxLength": 200},
+        "u": {
+          "type": "array",
+          "items": {"type": "integer", "minimum": 0},
+          "minItems": 1,
+          "maxItems": 64
+        }
+      }
+    }
+  }
+}

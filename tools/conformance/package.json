@@ -1,0 +1,27 @@
+{
+  "name": "@md2ui/conformance",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Dev-only conformance runner against md2ui fixtures. Never a dependency of a package.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "conformance": "node src/cli.ts"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "0.0.9",
+    "@md2ui/contracts": "workspace:*",
+    "@md2ui/core": "workspace:*",
+    "@md2ui/text-conformance": "workspace:*",
+    "@md2ui/text-pretext": "workspace:*",
+    "@noble/hashes": "2.4.0",
+    "@types/fontkit": "2.0.9",
+    "diff": "9.0.0",
+    "fontkit": "2.0.4",
+    "playwright": "1.63.0",
+    "rolldown": "1.0.0-beta.59"
+  }
+}
