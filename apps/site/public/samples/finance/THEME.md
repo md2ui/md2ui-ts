@@ -233,9 +233,6 @@ Color: #8A96A8
 
 ## Datapoints
 
-### Dates
-<!-- "Nov 4, 9:17 PM" is a timestamp, not a day to schedule: no day chip. -->
-Enabled: no
 
 ### Key Value Bars
 Enabled: yes

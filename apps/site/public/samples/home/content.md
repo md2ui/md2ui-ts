@@ -178,7 +178,7 @@ A food delivery `demo app` where every page is an agent's reply.
 
 ++++
 
-"[`Try it`](https://github.com/md2ui/md2ui)"](https://github.com/md2ui/md2ui)
+"[`Try it`](https://github.com/md2ui/burger-shop-demo)"](https://github.com/md2ui/burger-shop-demo)
 
 [## Claude & ChatGPT plugins {#quick-card-2}
 
