@@ -21,6 +21,9 @@ const BENTO_MAX_DEPTH = 3;
 const BENTO_BEAM = 4;
 /** md2ui `BENTO_ASPECT_WEIGHT`: the weight of the area-scaled aspect penalty. */
 const BENTO_ASPECT_WEIGHT = 0.25;
+/** md2ui `BENTO_DEV_STEPS`: the aspect deviation's grid, so `Math.log`'s last bit,
+ * which differs by platform, cannot break a tie (md2ui ADR-300). */
+const BENTO_DEV_STEPS = 1e9;
 
 /** A vertical stack: its parts, height and cost (md2ui `pack_v`'s candidates). */
 type Stack = readonly [parts: readonly LayoutNode[], height: number, cost: number];
@@ -121,11 +124,11 @@ function buildBento(
     const [sub, h] = cellAt(i, s);
     const wd = spanW(s);
     const r = wd / h;
-    const dev = Math.min(
-      Math.abs(Math.log(r)),
-      Math.abs(Math.log(r / 2)),
-      Math.abs(Math.log(2 * r)),
-    );
+    const dev =
+      pyRound(
+        Math.min(Math.abs(Math.log(r)), Math.abs(Math.log(r / 2)), Math.abs(Math.log(2 * r))) *
+          BENTO_DEV_STEPS,
+      ) / BENTO_DEV_STEPS;
     let pen = BENTO_ASPECT_WEIGHT * dev * wd * h;
     if (r > 4 || r < 0.25) pen *= 2;
     return [[sub], h, pen];
