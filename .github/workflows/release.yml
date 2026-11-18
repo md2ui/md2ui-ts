@@ -101,6 +101,8 @@ jobs:
           npm --version
           # --provenance: trusted publishing attests provenance by itself, a token
           # does not, so the first release asks for it (id-token: write, above).
+          # ./ makes the tarball a path: npm reads `tarballs/x.tgz` as GitHub's
+          # `user/repo` shorthand and tries to clone it.
           for p in $PACKAGES; do
-            npm publish tarballs/md2ui-$p-*.tgz --access public --tag alpha --provenance $DRY_RUN
+            npm publish ./tarballs/md2ui-$p-*.tgz --access public --tag alpha --provenance $DRY_RUN
           done
